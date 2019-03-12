@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+html {
+   font-family: Rockwell, Georgia, sans-serif;
+   height: 100%;
+   width: 100%;
+}
+
+img {
+   max-height: 200px;
+}
+
+header {
+   padding-top: 12px;
+   background-image: linear-gradient(to bottom right, rgba(177,255,213,1), rgba(140, 255, 251, 1), rgba(77, 154, 183, 1)/*I may consider to keep this color instead rgba(77, 183, 180, 1)*/);
+}
+
+header img {
+   display: block;
+   position: static;
+   height: 147px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 12px;
+   max-width: 400px;
+}
+
+header img:hover {
+   -webkit-transform: scale(1.03);
+   -moz-transform: scale(1.03);
+   transform: scale(1.03);
+   box-shadow: 9px 8px 8px rgba(0,0,0,0.2);
+}
+
+body {
+   background-color: white;
+   margin-top: 0%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 960px;
+   min-width: 369px;
+   width: 98%;
+}
+
+h1 {
+   font-family: Rockwell, Georgia, sans-serif;
+   
+}
+
+#heading {
+   color: rgba(140, 255, 251, 1);
+   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+article {
+   height: 100%;
+   width: 100%;
+}
+
+div article img {
+   width: 30%;
+}
+
+article img#example {
+   display: grid;
+}
+
+ol {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   border: 5px rgba(166, 255, 224, 1) solid;
+   border-radius: 5px;
+}
+
+figure img {
+   border: 5px rgba(166, 255, 224, 1) solid;
+}
+
+table a:link {
+   color: rgba(140, 255, 251, 1);
+   text-decoration: none;
+}
+
+table a:visited {
+   color: rgba(77, 183, 180, 1);
+   text-decoration: none;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+th, td {
+   border: 1px solid black;
+   text-align: center;
+}
+th {
+   background-color: rgba(166, 255, 224, 1);
+ }
+
+tfoot td {
+   text-align: left;
+}
+.footer {
+   margin-left: auto;
+   margin-right: auto;
+   color: white;
+   height: 35px;
+   line-height: 35px;
+   width: 100%;
+   text-align: center;
+   padding-left: 0;
+   background-color: rgba(77, 183, 180, 1);
+   background-color: hsl(178, 42%, 51%)
+}
+
+footer::after {
+   content:"";
+   display: block;
+   clear: both;
+}
+/*M7LO11 Demonstrate how to format a form with CSS
+These styles format my form and its contents
+*/
+form {
+   border: 1px solid black;
+   padding-bottom: 100px;
+}
+
+input {
+   margin: 10px;
+}
+
+input#fileupload {
+	width: 180px;
+	margin: 0;
+}
+textarea {
+   margin-left: 10px;
+}
+label {
+   margin: 10px;
+}
+
+iframe {
+   margin: auto;
+}
+
+nav {
+   width: 100%;
+   background-color: black;
+   height: 35px;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+
+nav ul {
+   padding: 0px;
+   height: 35px;
+   width: 100%;
+   margin: auto;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+
+nav ul li {
+   list-style-type: none;
+   width: 20%;
+   float: left;
+   margin: 0;
+   text-align: center;
+}
+/*M8LO10 Demonstrate a CSS transition
+The background color transitions from black to cyan over the course of 200ms and eases in when you hover over my nav links
+*/
+nav ul li a {
+   display: block;
+   border-collapse: collapse;
+   background-color: black;
+   color: white;
+   line-height: 35px;
+   width: 100%;
+   margin: auto;
+   text-decoration: none;
+   -webkit-transition: background-color 200ms ease-in;
+   -moz-transition: background-color 200ms ease-in;
+   transition: background-color 200ms ease-in;
+}
+
+nav a:hover {
+   border-collapse: collapse;
+   background-color: rgba(77, 183, 180, 0.9);
+   display: block;
+   color: white;
+   line-height: 35px;
+   width: 100%;
+   text-decoration: none;
+}
+
+@media only screen and (max-width: 900px){
+	html {
+		min-width: 400px;
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	header {
+		height: 100%;
+	}
+	header img[src="theartcart.png"]:hover {
+		width: 96px;
+		height: 35.19px;
+	}
+	
+	/*
+	nav ul li#pullDownTitle {
+		width: 100%;
+	}
+	
+	nav ul li.pullDown {
+		display: none;
+		list-style-type: none;
+		width: 100%;
+		float: left;
+		margin: 0;
+		text-align: center;
+	}
+	
+	li#pullDownTitle:hover+li.pullDown, li.pullDown:hover {
+		display: block;
+	}*/
+
+
+	h1 {
+		height: 75px;
+		font-size: 1.5em;
+	}
+	
+	body section {
+		width: 196px
+	}
+	
+	body section {
+		width: 196px
+	}
+	
+	p {
+		padding-left: 112px;
+		font-size: 0.7em;
+	}
+	
+	table.history {
+		font-size: 0.632em;
+	}
+	
+	footer {
+		font-size: 0.5em;
+		height: 14px;
+	}
+	
+}

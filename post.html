@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Grant Palmer
+1/16/19
+ The Art Cart is an Art sharing website that will
+ display posted art and some historic art for people to learn about.
+-->
+
+<head>
+    
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="reset.css" rel="stylesheet" type="text/css" />
+	<link href="base.css" rel="stylesheet" type="text/css" />
+	
+	<title>The Art Cart / Post</title>
+	<style>
+    article {
+      margin-bottom: 40px;
+    }
+    </style>
+</head>
+
+<body>
+  <header>
+    
+    <a href="index.html"><img alt="The Art Cart" src="theartcart.PNG"></a>
+	<nav>
+	  <ul>
+		<li id="pullDownTitle"><a href="index.html">Home</a></li>
+		<li class="pullDown"><a href="gallery.html">Gallery</a></li>
+		<li class="pullDown"><a href="post.html" style="background-color: rgba(77, 183, 180, 0.825);">Post</a></li>
+		<li class="pullDown"><a href="about.html">About</a></li>
+		<li class="pullDown"><a href="history.html">History</a></li>
+	  </ul>
+	</nav>
+  </header>
+  <article>
+  
+      <h1 style="color: rgba(140, 255, 251, 1); text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">Post</h1>
+	    <form action="http://www.example.com" method="post">		  <label for="fileUpload">Insert an image to upload</label>
+		  <input type="file" name="fileupload" id="fileUpload">		  <label for="medium">Select a Medium</label>		  <!--M7LO8 Demonstrate the use of a selection list in a form		  This selection list allows the user to choose the medium they used for their peice of art		  -->		  <select name="medium" size="1">		    <option value="airbrush">Airbrush</option>			<option value="acrylic">Acrylic</option>			<option value="chalk">Chalk</option>			<option value="charcoal">Charcoal</option>			<option value="coloredpencil">Colored Pencil</option>			<option value="conte">Cont&eacute;</option>			<option value="crayon">Crayon</option>			<option value="gouache">Gouache</option>			<option value="graphite">Graphite</option>			<option value="marker">Marker</option>			<option value="oilpaint">Oil Paint</option>			<option value="pastel">Pastel</option>			<option value="penandink">Pen and ink</option>			<option value="pencil">Pencil</option>			<option value="sand">Sand</option>			<option value="tempura">Tempura</option>			<option value="watercolor">Watercolor</option>		  </select>		  <!--M7LO9 Demonstrate the use of a text area in a form		  This is an area box for the user to put a description for their art in		  -->		  <textarea name="description" style="width:300px; height: 100px;" placeholder="Provide description (optional)"></textarea>		  <!--M7LO10 Demonstrate the use of a submit button in a form		  This input is a submit button that "posts" to example.com		  -->
+		  <input type="submit" value="Submit" id="submit">		  
+		</form>
+  </article>
+  <footer class="footer">
+      <p class="footer"><strong>The Art Cart</strong> <i>Contact Us</i>: (123)-456-7890 theartcart@theartcart.com &minus; This is a mock website. It may be developed fully later.</p>
+  </footer>
+</body>
